@@ -22,26 +22,3 @@ const HomePage = () => {
   );
 };
 export default HomePage;
-
-
-
-
-// import { useChatStore } from "../store/useChatStore";
-
-// import Sidebar from "../components/Sidebar";
-// import NoChatSelected from "../components/NoChatSelected";
-// import ChatContainer from "../components/ChatContainer";
-
-// const HomePage = () => {
-//   const { selectedUser } = useChatStore();
-
-//   return (
-//     <div className="h-screen bg-base-200 p-3">
-//       <div className="flex h-full max-w-6xl mx-auto bg-base-100 rounded-xl shadow-sm overflow-hidden border border-base-300">
-//         <Sidebar />
-//         {!selectedUser ? <NoChatSelected /> : <ChatContainer />}
-//       </div>
-//     </div>
-//   );
-// };
-// export default HomePage;

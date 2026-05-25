@@ -87,10 +87,10 @@ const Navbar = () => {
 
           {authUser && (
   <>
-    <Link to="/settings" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-base-content/60 hover:text-base-content hover:bg-base-200 border border-base-200 transition-colors">
+    {/* <Link to="/settings" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-base-content/60 hover:text-base-content hover:bg-base-200 border border-base-200 transition-colors">
       <Settings className="w-4 h-4" />
       <span className="hidden sm:inline">Settings</span>
-    </Link>
+    </Link> */}
 
     <div className="w-px h-5 bg-base-200 mx-1" />
 

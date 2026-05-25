@@ -86,26 +86,39 @@ const Navbar = () => {
           </Link>
 
           {authUser && (
-            <>
-              <Link
-                to="/profile"
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-base-content/60 hover:text-base-content hover:bg-base-200 border border-base-200 transition-colors"
-              >
-                <User className="w-4 h-4" />
-                <span className="hidden sm:inline">Profile</span>
-              </Link>
+  <>
+    <Link to="/settings" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-base-content/60 hover:text-base-content hover:bg-base-200 border border-base-200 transition-colors">
+      <Settings className="w-4 h-4" />
+      <span className="hidden sm:inline">Settings</span>
+    </Link>
 
-              <div className="w-px h-5 bg-base-200 mx-1" />
+    <div className="w-px h-5 bg-base-200 mx-1" />
 
-              <button
-                onClick={logout}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-base-content/50 hover:text-error hover:bg-error/10 transition-colors"
-              >
-                <LogOut className="w-4 h-4" />
-                <span className="hidden sm:inline">Logout</span>
-              </button>
-            </>
-          )}
+    <Link
+      to="/profile"
+      className="flex items-center gap-2 pl-3 pr-1 py-1 rounded-full border border-base-200 hover:bg-base-200 transition-colors"
+    >
+      <span className="text-sm text-base-content/60 hidden sm:inline">
+        {authUser.fullName?.split(" ")[0]}
+      </span>
+      <img
+        src={authUser.profilePic || "/avatar.png"}
+        alt="avatar"
+        className="w-7 h-7 rounded-full object-cover border border-base-300"
+      />
+    </Link>
+
+    <div className="w-px h-5 bg-base-200 mx-1" />
+
+    <button
+      onClick={logout}
+      className="p-1.5 rounded-lg text-base-content/50 hover:text-error hover:bg-error/10 transition-colors"
+      title="Logout"
+    >
+      <LogOut className="w-4 h-4" />
+    </button>
+  </>
+)}
         </div>
       </div>
     </header>

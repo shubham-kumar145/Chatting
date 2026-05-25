@@ -1,37 +1,93 @@
-import { X } from "lucide-react";
+// import { X } from "lucide-react";
+// import { useAuthStore } from "../store/useAuthStore";
+// import { useChatStore } from "../store/useChatStore";
+
+// const ChatHeader = () => {
+//   const { selectedUser, setSelectedUser } = useChatStore();
+//   const { onlineUsers } = useAuthStore();
+
+//   return (
+//     <div className="p-2.5 border-b border-base-300">
+//       <div className="flex items-center justify-between">
+//         <div className="flex items-center gap-3">
+//           {/* Avatar */}
+//           <div className="avatar">
+//             <div className="size-10 rounded-full relative">
+//               <img src={selectedUser.profilePic || "/avatar.png"} alt={selectedUser.fullName} />
+//             </div>
+//           </div>
+
+//           {/* User info */}
+//           <div>
+//             <h3 className="font-medium">{selectedUser.fullName}</h3>
+//             <p className="text-sm text-base-content/70">
+//               {onlineUsers.includes(selectedUser._id) ? "Online" : "Offline"}
+//             </p>
+//           </div>
+//         </div>
+
+//         {/* Close button */}
+//         <button onClick={() => setSelectedUser(null)}>
+//           <X />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+// export default ChatHeader;
+
+
+import { X, Phone, Video } from "lucide-react";
 import { useAuthStore } from "../store/useAuthStore";
 import { useChatStore } from "../store/useChatStore";
 
 const ChatHeader = () => {
   const { selectedUser, setSelectedUser } = useChatStore();
   const { onlineUsers } = useAuthStore();
+  const isOnline = onlineUsers.includes(selectedUser._id);
 
   return (
-    <div className="p-2.5 border-b border-base-300">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          {/* Avatar */}
-          <div className="avatar">
-            <div className="size-10 rounded-full relative">
-              <img src={selectedUser.profilePic || "/avatar.png"} alt={selectedUser.fullName} />
-            </div>
-          </div>
-
-          {/* User info */}
-          <div>
-            <h3 className="font-medium">{selectedUser.fullName}</h3>
-            <p className="text-sm text-base-content/70">
-              {onlineUsers.includes(selectedUser._id) ? "Online" : "Offline"}
-            </p>
-          </div>
+    <div className="px-4 py-3 border-b border-base-200 flex items-center justify-between">
+      {/* Left: avatar + info */}
+      <div className="flex items-center gap-3">
+        <div className="relative">
+          <img
+            src={selectedUser.profilePic || "/avatar.png"}
+            alt={selectedUser.fullName}
+            className="w-9 h-9 rounded-full object-cover border border-base-300"
+          />
+          <span
+            className={`absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full border-2 border-base-100
+              ${isOnline ? "bg-success" : "bg-base-300"}`}
+          />
         </div>
 
-        {/* Close button */}
-        <button onClick={() => setSelectedUser(null)}>
-          <X />
+        <div>
+          <h3 className="text-sm font-medium leading-tight">{selectedUser.fullName}</h3>
+          <p className={`text-xs mt-0.5 ${isOnline ? "text-success" : "text-base-content/40"}`}>
+            {isOnline ? "Online" : "Offline"}
+          </p>
+        </div>
+      </div>
+
+      {/* Right: actions + close */}
+      <div className="flex items-center gap-1">
+        <button className="btn btn-ghost btn-sm btn-square text-base-content/60 hover:text-base-content">
+          <Phone className="w-4 h-4" />
+        </button>
+        <button className="btn btn-ghost btn-sm btn-square text-base-content/60 hover:text-base-content">
+          <Video className="w-4 h-4" />
+        </button>
+        <div className="w-px h-5 bg-base-300 mx-1" />
+        <button
+          onClick={() => setSelectedUser(null)}
+          className="btn btn-ghost btn-sm btn-square text-base-content/60 hover:text-base-content"
+        >
+          <X className="w-4 h-4" />
         </button>
       </div>
     </div>
   );
 };
+
 export default ChatHeader;

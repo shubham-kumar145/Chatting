@@ -26,6 +26,18 @@ Built with scalability and performance in mind, the application delivers a fast 
 
 ---
 
+# 🌐 Live Demo
+
+🚀 https://chatting-frontend-wine.vercel.app/
+
+---
+
+# 📌 Repository
+
+https://github.com/shubham-kumar145/Chatting
+
+---
+
 # ✨ Key Features
 
 ## 💬 Real-Time Messaging
@@ -163,17 +175,7 @@ npm run dev
 
 ---
 
-# 🌐 Live Demo
 
-🚀 https://chatting-frontend-wine.vercel.app/
-
----
-
-# 📌 Repository
-
-https://github.com/shubham-kumar145/Chatting
-
----
 
 # 🔮 Future Enhancements
 

@@ -238,7 +238,7 @@ npm run dev
 * 📧 Email: contact@shubhamkumar.me
 * ▶️ YouTube: https://www.youtube.com/@ShubhamKumar-145
 
-<br/><br/>
+<br/>
 
 ⭐ **If you like Chatting, consider giving the repository a star!**
 

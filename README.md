@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:EC4899,100:06B6D4&height=200&section=header&text=💬%20Chatting&fontSize=58&fontColor=ffffff&fontAlignY=35&desc=Connect%20%E2%80%A2%20Communicate%20%E2%80%A2%20Collaborate&descAlignY=58&descSize=17&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:EC4899,100:06B6D4&height=200&section=header&text=🛒%20Stylish%20Wear%20Aesthetics&fontSize=48&fontColor=ffffff&fontAlignY=35&desc=Shop%20%E2%80%A2%20Manage%20%E2%80%A2%20Analyze&descAlignY=58&descSize=17&animation=fadeIn" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=22&duration=3000&pause=1000&color=EC4899&center=true&vCenter=true&width=650&lines=Real-Time+Chat+Application;Instant+Messaging+%E2%80%A2+Secure+Auth;Built+with+React+%2B+Node.js+%2B+Socket.io" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=22&duration=3000&pause=1000&color=EC4899&center=true&vCenter=true&width=700&lines=Full-Stack+E-Commerce+Platform;Secure+Authentication+%E2%80%A2+Role-Based+Dashboards;Built+with+React+%2B+Node.js+%2B+MongoDB+%2B+Redis" alt="Typing SVG" />
 
 <br/><br/>
 
-<a href="https://chatting-frontend-wine.vercel.app/">
+<a href="https://stylish-wear-aesthetics-ctjc.vercel.app/">
   <img src="https://img.shields.io/badge/🚀_Live_Demo-brightgreen?style=for-the-badge" />
 </a>
-<a href="https://github.com/shubham-kumar145/Chatting">
+<a href="https://github.com/shubham-kumar145/Stylish_Wear_Aesthetics">
   <img src="https://img.shields.io/badge/📦_GitHub_Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 <a href="https://shubhamkumar.me">
@@ -20,7 +20,7 @@
 
 <br/><br/>
 
-<img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,tailwind,socketio&theme=dark" />
+<img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,redis,tailwind,jwt,axios&theme=dark" />
 
 </div>
 
@@ -28,29 +28,71 @@
 
 ## 📌 Overview
 
-**Chatting** is a full-stack real-time messaging application built with **React, Node.js, and MongoDB**.
+**Stylish Wear Aesthetics** is a full-stack e-commerce platform designed to provide a secure and scalable shopping experience along with powerful role-based management dashboards.
 
-It delivers smooth and interactive communication between users through secure authentication, instant message delivery, and live online/offline status tracking — all powered by **Socket.io** for real-time updates and wrapped in a fast, responsive modern interface.
+The platform supports multiple user roles — **Admin, Staff, Seller, and User** — with controlled access to features through **Role-Based Access Control (RBAC)**.
+
+The application combines **React, Node.js, Express.js, MongoDB, Redis, and JWT authentication** to handle shopping workflows, product management, secure sessions, inventory operations, and sales analytics.
 
 ---
 
 ## ✨ Features
 
-| 💬 Real-Time | 🔐 Auth & Security | 🟢 Presence |
-|:---:|:---:|:---:|
-| Instant message delivery | JWT-based authentication | Online/offline status |
-| Dynamic updates, no refresh | Secure login & registration | Active user tracking |
-| Socket.io powered | Protected routes & APIs | Real-time status updates |
+|      🛍️ Shopping      |  🔐 Authentication | 👥 Role Management |
+| :--------------------: | :----------------: | :----------------: |
+|    Product browsing    | JWT authentication |        Admin       |
+|     Product details    |   Secure cookies   |        Staff       |
+|    Purchase tracking   |   Redis sessions   |       Seller       |
+| Responsive shopping UI |   Protected APIs   |        User        |
 
-| 🎨 Experience | ⚡ Performance |
-|:---:|:---:|
-| Clean, modern UI | Fast & optimized frontend |
-| Fully responsive design | Scalable chat architecture |
-| Smooth interactions | Secure session handling |
+| 📦 Product Management |    📊 Analytics   |     ⚡ Performance     |
+| :-------------------: | :---------------: | :-------------------: |
+|      Add products     |   Sales tracking  |     Redis caching     |
+|    Update products    |  Revenue insights |     Optimized APIs    |
+|    Remove products    |  Monthly reports  |   Efficient sessions  |
+|  Inventory management | Product analytics | Scalable architecture |
 
 ---
 
-## 🛠️ Tech Stack
+# 👑 Role-Based Dashboards
+
+The application provides dedicated dashboards based on the authenticated user's role.
+
+### 👑 Admin
+
+* Manage users and roles
+* Add, update, and remove products
+* Monitor platform-wide sales
+* View revenue analytics
+* Track monthly performance
+* Access administrative controls
+
+### 🧑‍💼 Staff
+
+* Manage product inventory
+* Monitor sales performance
+* View operational analytics
+* Assist with product management
+
+### 🏪 Seller
+
+* Add owned products
+* Update product information
+* Remove owned products
+* Manage inventory
+* View product-wise sales analytics
+
+### 🛍️ User
+
+* Browse available products
+* View detailed product information
+* Make purchases
+* Track purchase activity
+* Manage authenticated sessions
+
+---
+
+# 🛠️ Tech Stack
 
 <div align="center">
 
@@ -58,84 +100,228 @@ It delivers smooth and interactive communication between users through secure au
 <img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=node.js&logoColor=white" />
 <img src="https://img.shields.io/badge/EXPRESS-000000?style=for-the-badge&logo=express&logoColor=white" />
 <img src="https://img.shields.io/badge/MONGODB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-<img src="https://img.shields.io/badge/SOCKET.IO-010101?style=for-the-badge&logo=socket.io&logoColor=white" />
+<img src="https://img.shields.io/badge/REDIS-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
 <img src="https://img.shields.io/badge/TAILWIND_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
 <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
 <img src="https://img.shields.io/badge/AXIOS-5A29E4?style=for-the-badge&logo=axios&logoColor=white" />
 
 </div>
 
-| Layer | Technology |
-|:--|:--|
-| 🎨 **Frontend** | React.js · Tailwind CSS |
-| ⚙️ **Backend** | Node.js · Express.js |
-| 🗄️ **Database** | MongoDB |
-| 🔄 **Real-Time Communication** | Socket.io |
-| 🔐 **Authentication** | JWT (JSON Web Token) |
-| 🌐 **HTTP Client** | Axios |
+| Layer                    | Technology              |
+| :----------------------- | :---------------------- |
+| 🎨 **Frontend**          | React.js · Tailwind CSS |
+| ⚙️ **Backend**           | Node.js · Express.js    |
+| 🗄️ **Database**         | MongoDB · Mongoose      |
+| ⚡ **Caching & Sessions** | Redis                   |
+| 🔐 **Authentication**    | JWT · Secure Cookies    |
+| 🌐 **HTTP Client**       | Axios                   |
+| 🔌 **API Architecture**  | REST APIs               |
 
 ---
 
-## 🏗️ Architecture
+# 🏗️ Architecture
 
 ```text
-                          💬 CHATTING
-                              │
-               ┌──────────────┴──────────────┐
-               │                             │
-        ⚛️ React Frontend                ⚙️ Node.js Backend
-               │                             │
-        ┌──────┼──────┐             ┌────────┼────────┐
-        │      │      │             │        │        │
-       🎨     🌐     🔄            🔐       🗄️       ⚡
-    Tailwind  Axios  Socket.io      JWT     MongoDB  Express
+                         🛒 STYLISH WEAR AESTHETICS
+                                      │
+                    ┌─────────────────┴─────────────────┐
+                    │                                   │
+             ⚛️ React Frontend                    ⚙️ Node.js Backend
+                    │                                   │
+          ┌─────────┼─────────┐             ┌───────────┼───────────┐
+          │         │         │             │           │           │
+       🛍️ Shop   👑 Dashboards 🔐 Auth    🌐 REST API  🗄️ MongoDB  ⚡ Redis
+          │         │         │             │           │           │
+          └─────────┼─────────┘             └───────────┼───────────┘
+                    │                                   │
+                    └──────────── Axios / REST ─────────┘
 ```
 
 ---
 
-## 🧩 Modular System Architecture
+# 🧩 Modular System Architecture
 
 ```text
-                                     💬 CHATTING SYSTEM
-                                            │
-                  ┌─────────────────────────┴─────────────────────────┐
-                  │                                                   │
-           🖥️ CLIENT MODULE                                   ⚙️ SERVER MODULE
-                  │                                                   │
-   ┌──────────────┼──────────────┐              ┌─────────────────────┼─────────────────────┐
-   │              │              │              │                     │                     │
-🔐 Auth       💬 Chat        🟢 Presence     🔐 Auth API          🔄 Socket Gateway      🗄️ Data Layer
-Module        Module          Module          Module                Module                Module
-   │              │              │              │                     │                     │
-- Login/       - Message       - Online/      - JWT issue &        - Connection          - MongoDB
-  Register       thread          offline        verify                mgmt                  models
-- Protected      rendering       status        - Password           - Event emit/         - Message
-  routes       - Real-time     - Active         hashing               listen                 schema
-- JWT token      updates via     user list     - Session            - Room/channel        - User
-  storage        Axios/Socket  - Live status     handling             handling               schema
-                                  broadcast
-
-              ▲                                          ▲
-              └──────────── Axios (REST) ─────────────────┘
-              └──────────── Socket.io (WebSocket) ─────────┘
+                              🛒 E-COMMERCE SYSTEM
+                                      │
+             ┌────────────────────────┴────────────────────────┐
+             │                                                 │
+      🖥️ CLIENT MODULE                                  ⚙️ SERVER MODULE
+             │                                                 │
+   ┌─────────┼─────────┬─────────┐              ┌──────────────┼──────────────┐
+   │         │         │         │              │              │              │
+ 🔐 Auth   🛍️ Shop   👑 Dashboard 📦 Products  🔐 Auth API   📦 Product API  📊 Analytics
+ Module    Module      Module      Module       Module         Module          Module
+   │         │         │         │              │              │              │
+ Login     Browse    Admin       Product       JWT issue      CRUD           Sales
+ Register  Products  Staff       listing       verify         operations     reports
+ Sessions  Details  Seller      Details        RBAC           validation     revenue
+           Purchase  User       Inventory      sessions       inventory      metrics
 ```
 
-**How the modules connect:**
-- The **Auth Module** (client) talks to the **Auth API Module** (server) over REST via Axios — issuing and verifying JWTs on login/register.
-- The **Chat Module** and **Presence Module** communicate with the **Socket Gateway Module** over persistent WebSocket connections for real-time message delivery and status updates.
-- The **Socket Gateway** and **Auth API** both read/write through the **Data Layer Module**, which handles all MongoDB interactions.
-- Each module is independently testable and replaceable — e.g. the Data Layer could swap MongoDB for another store without touching the Socket Gateway or Auth logic.
+### How the modules connect
+
+* The **Auth Module** communicates with the **Auth API** for login, registration, JWT verification, and session management.
+* The **Shop Module** communicates with backend REST APIs to retrieve products and process shopping-related operations.
+* The **Dashboard Module** exposes functionality based on the authenticated user's role.
+* The **Product Module** handles product creation, updates, deletion, and inventory operations.
+* The **Analytics Module** processes sales and revenue data for authorized dashboard users.
+* **Redis** is used for session/token storage and validation.
+* **MongoDB** provides persistent storage for users, products, purchases, and application data.
 
 ---
 
-## 📂 Project Structure
+# 🔐 Authentication & Security
+
+Security is a core part of the application architecture.
+
+### Authentication Flow
 
 ```text
-Chatting/
+        👤 User
+           │
+           ▼
+     🔐 Login / Register
+           │
+           ▼
+      ⚙️ Auth API
+           │
+           ├──────────────► 🗄️ MongoDB
+           │
+           ▼
+       🎫 JWT Token
+           │
+           ▼
+      ⚡ Redis Session
+           │
+           ▼
+    🔒 Protected APIs
+           │
+           ▼
+       👑 RBAC Check
+           │
+           ▼
+    Authorized Resource
+```
+
+### Security Features
+
+* 🔐 JWT-based authentication
+* 🍪 Secure cookie handling
+* ⚡ Redis-based session/token validation
+* ⏱️ Session timeout handling
+* 🚫 Token invalidation after logout
+* 🛡️ Protected API routes
+* 👥 Role-Based Access Control
+* 🔒 Authorization middleware
+* ♻️ Secure session lifecycle management
+
+---
+
+# 📦 Product Management System
+
+The platform provides role-controlled product management capabilities.
+
+### Product Operations
+
+* ➕ Add new products
+* ✏️ Update product information
+* ❌ Remove products
+* 🖼️ View dedicated product details
+* 📦 Manage inventory
+* 🏷️ Organize product listings
+* 🔒 Restrict product operations based on user role
+
+---
+
+# 📊 Analytics & Reporting
+
+Role-specific dashboards provide insights into platform performance.
+
+### Metrics
+
+* 📈 Total sales
+* 💰 Revenue performance
+* 📦 Product inventory
+* 📅 Monthly sales
+* 🛍️ Product-wise performance
+* 👥 Role-specific reporting
+
+Analytics access is controlled through the application's authorization system so that users only access information permitted by their role.
+
+---
+
+# 🎨 UI/UX Highlights
+
+* ✨ Clean and modern interface
+* 📱 Fully responsive design
+* 🛒 Intuitive shopping workflow
+* 👑 Dedicated role-based dashboards
+* 📊 Interactive analytics
+* ⚡ Smooth navigation
+* 🎯 Responsive product management
+* 🌙 Modern visual design
+
+---
+
+# 🚀 Scalability & Architecture
+
+The application is structured around a modular full-stack architecture designed to keep responsibilities separated.
+
+### Key Engineering Highlights
+
+* 🧩 Modular backend architecture
+* 🔌 RESTful API design
+* 🗄️ MongoDB-based persistent storage
+* ⚡ Redis-powered session management
+* 🔐 Middleware-based authentication and authorization
+* 👥 Role-Based Access Control
+* 📊 Dedicated analytics layer
+* 📱 Responsive React frontend
+* ⚙️ Maintainable project structure
+
+---
+
+# 🔄 Application Workflow
+
+```text
+1️⃣ User registers or logs in
+        ↓
+2️⃣ Authentication is verified
+        ↓
+3️⃣ JWT session is created
+        ↓
+4️⃣ Session/token information is validated through Redis
+        ↓
+5️⃣ User receives access based on their role
+        ↓
+6️⃣ User interacts with products and dashboards
+        ↓
+7️⃣ Backend validates authentication + authorization
+        ↓
+8️⃣ MongoDB handles persistent application data
+        ↓
+9️⃣ Analytics are generated from application data
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+Stylish_Wear_Aesthetics/
 │
 ├── frontend/
+│   ├── src/
+│   └── package.json
 │
 ├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   └── package.json
 │
 ├── package.json
 └── README.md
@@ -143,85 +329,106 @@ Chatting/
 
 ---
 
-## 🔄 Application Workflow
+# 🚀 Getting Started
 
-1️⃣ User registers or logs in securely
-2️⃣ JWT authentication token is generated
-3️⃣ Users connect to the Socket.io server
-4️⃣ Messages are sent and received instantly
-5️⃣ Online/offline status updates dynamically
-6️⃣ Messages update in real time without refreshing the page
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/shubham-kumar145/Stylish_Wear_Aesthetics.git
+cd Stylish_Wear_Aesthetics
+```
 
 ---
 
-## 🚀 Getting Started
+## 2️⃣ Install Dependencies
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/shubham-kumar145/Chatting.git
-cd Chatting
-```
-
-### 2. Install dependencies
+### Frontend
 
 ```bash
 cd frontend
 npm install
+```
 
+### Backend
+
+```bash
 cd ../backend
 npm install
 ```
 
-### 3. Configure environment variables
+---
+
+## 3️⃣ Configure Environment Variables
 
 Create a `.env` file inside the `backend` directory:
 
 ```env
-PORT=5000
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+JWT_REFRESH_SECRET=your_refresh_secret
+REDIS_URL=your_redis_url
 ```
 
-### 4. Start the development server
+---
+
+## 4️⃣ Start the Development Servers
+
+### Backend
 
 ```bash
-# Backend
 cd backend
 npm run dev
+```
 
-# Frontend
+### Frontend
+
+```bash
 cd frontend
 npm run dev
 ```
 
 ---
 
-## 🌟 Development Highlights
+# 🌐 Live Demo
 
-- 🎯 **Real-Time Architecture** — Socket.io integration
-- 🔐 **Secure Authentication** — JWT-based system
-- 📝 **Robust APIs** — Secure backend endpoints
-- 🧩 **Reusable UI** — Modular React components
-- 🎨 **Modern Styling** — Tailwind CSS
-- 📱 **Responsive Design** — Desktop and mobile friendly
-- ⚡ **Scalable Structure** — Built for growth
+<div align="center">
+
+🚀 **[Stylish Wear Aesthetics — Live Demo](https://stylish-wear-aesthetics-ctjc.vercel.app/)**
+
+</div>
 
 ---
 
-## 🗺️ Roadmap
+# 📌 Project Highlights
 
-- [ ] 👥 Group chat support
-- [ ] 📞 Voice & video calling
-- [ ] 📎 File and media sharing
-- [ ] 😀 Emoji reactions
-- [ ] 🔔 Push notifications
-- [ ] 🌙 Dark mode
-- [ ] 📱 Progressive Web App
+| Feature           | Implementation                   |
+| :---------------- | :------------------------------- |
+| 🛍️ E-Commerce    | Complete shopping workflow       |
+| 🔐 Authentication | JWT + Secure Cookies             |
+| ⚡ Sessions        | Redis-powered session management |
+| 👥 Authorization  | Role-Based Access Control        |
+| 📦 Products       | CRUD + inventory management      |
+| 📊 Analytics      | Sales and revenue reporting      |
+| 🎨 Frontend       | React + Tailwind CSS             |
+| ⚙️ Backend        | Node.js + Express.js             |
+| 🗄️ Database      | MongoDB + Mongoose               |
 
 ---
 
-## 👨‍💻 Author
+# 🗺️ Roadmap
+
+* [ ] 💳 Online payment integration
+* [ ] 📦 Advanced order tracking
+* [ ] ⭐ Product reviews & ratings
+* [ ] ❤️ Wishlist functionality
+* [ ] 🔔 Order notifications
+* [ ] 🎟️ Coupons & discount system
+* [ ] 📊 Advanced sales analytics
+* [ ] 📱 Progressive Web App
+
+---
+
+# 👨‍💻 Author
 
 <div>
 
@@ -231,7 +438,6 @@ npm run dev
 
 <br/>
 
-
 * 🌐 Portfolio: https://shubhamkumar.me
 * 💻 GitHub: https://github.com/shubham-kumar145
 * 💼 LinkedIn: https://www.linkedin.com/in/shubham-kumar145/
@@ -240,7 +446,7 @@ npm run dev
 
 <br/>
 
-⭐ **If you like Chatting, consider giving the repository a star!**
+⭐ **If you like Stylish Wear Aesthetics, consider giving the repository a star!**
 
 </div>
 
